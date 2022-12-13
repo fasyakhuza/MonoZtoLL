@@ -29,11 +29,18 @@ Change the output folder ```/eos/user/f/fkhuzaim/MET_Optimization/``` in ```line
 
 ## Submit the condor jobs
 
-### If you run for ALL BACKGROUND samples EXCEPT DY-Inclusive sample
+### 1. If you run for ALL BACKGROUND samples EXCEPT DY-Inclusive sample
 
 Please uncomment ```Line 15``` and comment ```Line 16``` of runAnalysis.sh file.
 
 Please set ```Line 5``` of run_bkg.sh to be false ```is_DY_inclusive="false"```.
+
+
+### 2. If you run for DY-Inclusive sample
+
+Please comment ```Line 15``` and uncomment ```Line 16``` of runAnalysis.sh file.
+
+Please set ```Line 5``` of run_bkg.sh to be true ```is_DY_inclusive="true"```.
 
 
 #### Running
@@ -54,7 +61,7 @@ Run the following command to see the status:
 
 #### Check the Failed Jobs
 
-If you want to check the failed jobs, you can change ```line 6``` of resubmitSplittedFailedJobs.sh to be "true" ```is_checkFailedJobs="true"```.
+If you want to ONLY check the failed jobs without resubmitting them, you can change ```line 6``` of resubmitSplittedFailedJobs.sh to be true ```is_checkFailedJobs="true"```.
 
 Then, run the script
 
@@ -69,7 +76,7 @@ Once your jobs have finished but you find there are number of jobs that are fail
 
 ### Changes to be done in executing files for resubmission
 
-Change ```line 6``` of resubmitSplittedFailedJobs.sh to be "false" ```is_checkFailedJobs="false"```
+Change ```line 6``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFailedJobs="false"```
 
 Change the folder name in ```line 7``` of ```resubmitSplittedFailedJobs.sh``` file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
 
