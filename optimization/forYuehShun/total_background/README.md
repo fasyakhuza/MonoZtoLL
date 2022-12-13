@@ -3,7 +3,7 @@
 A set of scripts to submit jobs to HTCondor for applying preselections to background samples for Z pT optimization
 
 
-### Setup environment
+## Setup environment
 
 Download this folder ```total_background```
 
@@ -27,9 +27,9 @@ Change the ```Proxy_path``` in ```line 3``` of submit_multi.sub file to be your 
 Change the output folder ```/eos/user/f/fkhuzaim/MET_Optimization/``` in ```line 20 ``` of runAnalysis.sh file to be the folder that you just created in the CERN EOS.
 
 
-### Submit the condor jobs
+## Submit the condor jobs
 
-#### If you run for ALL BACKGROUND samples EXCEPT DY-Inclusive sample
+### If you run for ALL BACKGROUND samples EXCEPT DY-Inclusive sample
 
 Please uncomment ```Line 15``` and comment ```Line 16``` of runAnalysis.sh file.
 
@@ -52,7 +52,15 @@ Run the following command to see the status:
 
 ```condor_q yourusername```
 
+#### Check the Failed Jobs
 
+If you want to check the failed jobs, you can change ```line 6``` of resubmitSplittedFailedJobs.sh to be "true" ```is_checkFailedJobs="true"```.
+
+Then, run the script
+
+```
+. resubmitSplittedFailedJobs.sh
+```
 
 
 # Settings for REsubmitting jobs to HTCondor.
@@ -60,6 +68,8 @@ Run the following command to see the status:
 Once your jobs have finished but you find there are number of jobs that are failed, you can resubmit the jobs by following the instructions below.
 
 ### Changes to be done in executing files for resubmission
+
+Change ```line 6``` of resubmitSplittedFailedJobs.sh to be "false" ```is_checkFailedJobs="false"```
 
 Change the folder name in ```line 7``` of ```resubmitSplittedFailedJobs.sh``` file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
 
