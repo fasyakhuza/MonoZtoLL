@@ -33,7 +33,7 @@ Change the output folder ```/eos/user/f/fkhuzaim/MET_Optimization/``` in ```line
 
 Please uncomment ```Line 15``` and comment ```Line 16``` of runAnalysis.sh file.
 
-Please set L5 of run_bkg.sh to be false ```is_DY_inclusive="false"```.
+Please set ```Line 5``` of run_bkg.sh to be false ```is_DY_inclusive="false"```.
 
 
 #### Running
