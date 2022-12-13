@@ -3,7 +3,7 @@
 
 dateAndtime=`date +'%Y-%m-%d-%H-%M-%S'`
 stringSearch="written"
-is_checkFailedJobs="false"
+is_checkFailedJobs="true"
  
 splited_listdir="tempSplittedSubmitFilelists_2022-12-12-11-30-13" #change this to be the folder of input files that you have submitted and you want to resubmit
 
@@ -69,7 +69,7 @@ else
         cp submit_multi.sub submit_multi_temp.sub
         sed -i "/listFile = /c listFile = ${line}" submit_multi_temp.sub
         sed -i "/outputname = /c outputname = ${outputname}" submit_multi_temp.sub
-        #condor_submit submit_multi_temp.sub >> $logfile
+        condor_submit submit_multi_temp.sub >> $logfile
         #root -b -q ./xAna_Zpt_optimization_bkg2.C++\(\"${inputsample}\",\"${outputname}\"\)
     done < $resubmittxt
 
