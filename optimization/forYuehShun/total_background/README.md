@@ -1,9 +1,9 @@
-# Settings for submitting jobs to HTCondor. 
+# I. Settings for submitting jobs to HTCondor. 
 
 A set of scripts to submit jobs to HTCondor for applying preselections to background samples for Z pT optimization
 
 
-## Setup environment
+## A. Setup environment
 
 Download this folder ```total_background```
 
@@ -20,14 +20,14 @@ mkdir /eos/user/userinitial/username/foldername
 ```
 
 
-## Changes to be done in executing files.
+## B. Changes to be done in executing files.
 
 Change the ```Proxy_path``` in ```line 3``` of submit_multi.sub file to be your proxy path.
 
 Change the output folder ```/eos/user/f/fkhuzaim/MET_Optimization/``` in ```line 20 ``` of runAnalysis.sh file to be the folder that you just created in the CERN EOS.
 
 
-## Submit the condor jobs
+## C. Submit the condor jobs
 
 ### 1. If you run for ALL BACKGROUND samples EXCEPT DY-Inclusive sample
 
@@ -70,11 +70,11 @@ Then, run the script
 ```
 
 
-# Settings for REsubmitting jobs to HTCondor.
+# II. Settings for REsubmitting jobs to HTCondor.
 
 Once your jobs have finished but you find there are number of jobs that are failed, you can resubmit the jobs by following the instructions below.
 
-### Changes to be done in executing files for resubmission
+## A. Changes to be done in executing files for resubmission
 
 Change ```line 6``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFailedJobs="false"```
 
@@ -85,7 +85,7 @@ Change the FIRST job Id in ```line 15``` of resubmitSplittedFailedJobs.sh file t
 Change the LAST job Id in ```line 16``` of resubmitSplittedFailedJobs.sh file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
 
 
-### Resubmit the failed jobs to HTCondor
+## B. Resubmit the failed jobs to HTCondor
 
 Run
 
