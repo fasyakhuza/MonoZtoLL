@@ -80,9 +80,9 @@ Change ```line 6``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFail
 
 Change the folder name in ```line 7``` of resubmitSplittedFailedJobs.sh file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
 
-Change the FIRST job Id in ```line 15``` of resubmitSplittedFailedJobs.sh file to be your FIRST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
+Change the FIRST job Id in ```line 15``` of resubmitSplittedFailedJobs.sh file to be your FIRST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit_YYYY-MM-DD-HH-MM-SS.log```
 
-Change the LAST job Id in ```line 16``` of resubmitSplittedFailedJobs.sh file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
+Change the LAST job Id in ```line 16``` of resubmitSplittedFailedJobs.sh file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit_YYYY-MM-DD-HH-MM-SS.log```
 
 
 ## B. Resubmit the failed jobs to HTCondor
