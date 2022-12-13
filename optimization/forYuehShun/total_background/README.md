@@ -20,7 +20,7 @@ mkdir /eos/user/userinitial/username/foldername
 ```
 
 
-### Changes to be done in executing files.
+## Changes to be done in executing files.
 
 Change the ```Proxy_path``` in ```line 3``` of submit_multi.sub file to be your proxy path.
 
@@ -78,11 +78,11 @@ Once your jobs have finished but you find there are number of jobs that are fail
 
 Change ```line 6``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFailedJobs="false"```
 
-Change the folder name in ```line 7``` of ```resubmitSplittedFailedJobs.sh``` file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
+Change the folder name in ```line 7``` of resubmitSplittedFailedJobs.sh file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
 
-Change the FIRST job Id in ```line 15``` of ```resubmitSplittedFailedJobs.sh``` file to be your FIRST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
+Change the FIRST job Id in ```line 15``` of resubmitSplittedFailedJobs.sh file to be your FIRST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
 
-Change the LAST job Id in ```line 16``` of ```resubmitSplittedFailedJobs.sh``` file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
+Change the LAST job Id in ```line 16``` of resubmitSplittedFailedJobs.sh file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit.txt```
 
 
 ### Resubmit the failed jobs to HTCondor
