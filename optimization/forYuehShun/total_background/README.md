@@ -36,7 +36,7 @@ Please uncomment ```Line 15``` and comment ```Line 16``` of runAnalysis.sh file.
 Please set ```Line 5``` of run_bkg.sh to be false ```is_DY_inclusive="false"```.
 
 
-### 2. If you run for DY-Inclusive sample
+### 2. If you run for ONLY DY-Inclusive sample
 
 Please comment ```Line 15``` and uncomment ```Line 16``` of runAnalysis.sh file.
 
