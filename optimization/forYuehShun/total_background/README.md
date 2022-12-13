@@ -90,7 +90,6 @@ Change the LAST job Id in ```line 16``` of resubmitSplittedFailedJobs.sh file to
 Run
 
 ```
-
 voms-proxy-init --voms cms --valid 192:00 && cp -v /tmp/x509up_xxxxxxx /afs/cern.ch/user/usernameinitial/yourusername/private/x509up
 
 . resubmitSplittedFailedJobs.sh
