@@ -1,4 +1,4 @@
-# I. Settings for submitting jobs to HTCondor. 
+# I. Settings for submitting jobs to HTCondor
 
 A set of scripts to submit jobs to HTCondor for applying preselections to background samples for Z pT optimization
 
@@ -20,7 +20,7 @@ mkdir /eos/user/userinitial/username/foldername
 ```
 
 
-## B. Changes to be done in executing files.
+## B. Changes must be done in executing files
 
 Change the ```Proxy_path``` in ```line 3``` of submit_multi.sub file to be your proxy path.
 
@@ -70,11 +70,11 @@ Then, run the script
 ```
 
 
-# II. Settings for REsubmitting jobs to HTCondor.
+# II. Settings for REsubmitting jobs to HTCondor
 
 Once your jobs have finished but you find there are number of jobs that are failed, you can resubmit the jobs by following the instructions below.
 
-## A. Changes to be done in executing files for resubmission
+## A. Changes must be done in executing files for resubmission
 
 Change ```line 6``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFailedJobs="false"```
 
