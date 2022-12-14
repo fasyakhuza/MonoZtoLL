@@ -76,13 +76,22 @@ Once your jobs have finished but you find there are number of jobs that are fail
 
 ## A. Changes must be done in executing files for resubmission
 
-Change ```line 6``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFailedJobs="false"```
+Change ```line 7``` of resubmitSplittedFailedJobs.sh to be false ```is_checkFailedJobs="false"```
 
-Change the folder name in ```line 7``` of resubmitSplittedFailedJobs.sh file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
+Change the folder name in ```line 11``` of resubmitSplittedFailedJobs.sh file to be your ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS``` folder name that you have submitted and you want to resubmit
 
-Change the FIRST job Id in ```line 15``` of resubmitSplittedFailedJobs.sh file to be your FIRST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit_YYYY-MM-DD-HH-MM-SS.log```
+Change the FIRST job Id in ```line 13``` of resubmitSplittedFailedJobs.sh file to be your FIRST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit_YYYY-MM-DD-HH-MM-SS.log```
 
-Change the LAST job Id in ```line 16``` of resubmitSplittedFailedJobs.sh file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit_YYYY-MM-DD-HH-MM-SS.log```
+Change the LAST job Id in ```line 14``` of resubmitSplittedFailedJobs.sh file to be your LAST job Id of ```tempSplittedSubmitFilelists_YYYY-mm-dd-HH-MM-SS```; you can check the job id in your ```logsubmit_YYYY-MM-DD-HH-MM-SS.log```
+
+
+### 1. If you run for ALL BACKGROUND samples EXCEPT DY-Inclusive sample
+
+Please change ```line 8``` of resubmitSplittedFailedJobs.sh to be false ```is_DY_inclusive="false"```
+
+### 2. If you run for ONLY DY-Inclusive sample
+
+Please change ```line 8``` of resubmitSplittedFailedJobs.sh to be true ```is_DY_inclusive="true"```
 
 
 ## B. Resubmit the failed jobs to HTCondor
