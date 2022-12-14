@@ -19,7 +19,7 @@ while read -r line; do
     #echo ""
     #echo ${arrFile[@]}
     #echo ""
-    #echo $outputdir$line.root
+    #echo $outputdir/$line.root
     
     theFiles=`echo ${arrFile[@]}`
     hadd $outputdir/$line.root $theFiles
