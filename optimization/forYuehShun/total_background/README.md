@@ -94,3 +94,20 @@ voms-proxy-init --voms cms --valid 192:00 && cp -v /tmp/x509up_xxxxxxx /afs/cern
 
 . resubmitSplittedFailedJobs.sh
 ```
+
+
+# III. Merge the Output Root Files
+Merge the output root files using hadd. Please follow the instructions or commands below to merge the root files.
+
+```
+cd haddFiles/
+```
+
+Then, change ```line 2``` of haddBackground.sh to be the folder path you located your output in your CERN EOS.
+
+After that, change ```line 5``` of haddBackground.sh to be the folder path to place the output of the merged files.
+
+Run for merging
+```
+. haddBackground.sh
+```
