@@ -4,8 +4,8 @@
 dateAndtime=`date +'%Y-%m-%d-%H-%M-%S'`
 stringSearch="written"
 
-is_checkFailedJobs="false"
-is_DY_inclusive="true"
+is_checkFailedJobs="true"
+is_DY_inclusive="false"
 
 
 splited_listdir="tempSplittedSubmitFilelists_2022-12-13-11-27-15" #change this to be the folder of input files that you have submitted and you want to resubmit
