@@ -3,8 +3,11 @@
 
 dateAndtime=`date +'%Y-%m-%d-%H-%M-%S'`
 stringSearch="written"
-is_checkFailedJobs="true"
- 
+
+is_checkFailedJobs="false"
+is_DY_inclusive="true"
+
+
 splited_listdir="tempSplittedSubmitFilelists_2022-12-13-11-27-15" #change this to be the folder of input files that you have submitted and you want to resubmit
 
 firstjobId="2675258" #change this to be the FIRST job Id of your oldSubmitDir; you can check your logsubmit.txt
@@ -72,6 +75,9 @@ else
         cp submit_multi.sub submit_multi_temp.sub
         sed -i "/listFile = /c listFile = ${line}" submit_multi_temp.sub
         sed -i "/outputname = /c outputname = ${outputname}" submit_multi_temp.sub
+        if [ $is_DY_inclusive == "true" ]; then
+            sed -i '/transfer_input_files = /c transfer_input_files = runAnalysis.sh, xAna_pre_Zpt_optimization_DYincl.C, $(listFile), dummy.txt, untuplizer.h' submit_multi_temp.sub
+        fi
         condor_submit submit_multi_temp.sub >> $logfile
         #root -b -q ./xAna_Zpt_optimization_bkg2.C++\(\"${inputsample}\",\"${outputname}\"\)
     done < $resubmittxt
