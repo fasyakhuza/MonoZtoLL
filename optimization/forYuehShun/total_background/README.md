@@ -45,7 +45,7 @@ Please set ```Line 5``` of run_bkg.sh to be true ```is_DY_inclusive="true"```.
 
 #### Running
 
-Set your proxy before running by executing and then submit to condor jobs
+Set your proxy before submitting analysis to HTCondor
 
 ```
 voms-proxy-init --voms cms --valid 192:00 && cp -v /tmp/x509up_xxxxxxx /afs/cern.ch/user/usernameinitial/yourusername/private/x509up
@@ -96,7 +96,7 @@ Please change ```line 8``` of resubmitSplittedFailedJobs.sh to be true ```is_DY_
 
 ## B. Resubmit the failed jobs to HTCondor
 
-Run
+Before resubmitting the failed jobs, do not forget to set your proxy first.
 
 ```
 voms-proxy-init --voms cms --valid 192:00 && cp -v /tmp/x509up_xxxxxxx /afs/cern.ch/user/usernameinitial/yourusername/private/x509up
