@@ -5,10 +5,10 @@ dateAndtime=`date +'%Y-%m-%d-%H-%M-%S'`
 stringSearch="written"
 is_checkFailedJobs="true"
  
-splited_listdir="tempSplittedSubmitFilelists_2022-12-12-11-30-13" #change this to be the folder of input files that you have submitted and you want to resubmit
+splited_listdir="tempSplittedSubmitFilelists_2022-12-13-11-27-15" #change this to be the folder of input files that you have submitted and you want to resubmit
 
-firstjobId="2659423" #change this to be the FIRST job Id of your oldSubmitDir; you can check your logsubmit.txt
-lastjobId="2659550"  #change this to be the LAST job Id of your oldSubmitDir; you can check your logsubmit.txt
+firstjobId="2675258" #change this to be the FIRST job Id of your oldSubmitDir; you can check your logsubmit.txt
+lastjobId="2675297"  #change this to be the LAST job Id of your oldSubmitDir; you can check your logsubmit.txt
 
 nFail=0
 
@@ -20,6 +20,9 @@ if [ $is_checkFailedJobs == "true" ]; then
             jobcluster=`echo $file | cut -d '.' -f 2`
             if [[ "$jobcluster" -ge $firstjobId && "$jobcluster" -le $lastjobId ]]; then
                 (( nFail = nFail + 1 ))
+                failedTxt=`grep -hnr "inputtxtFilename" output/condor.$jobid.out | rev | cut -d ' ' -f 1 | rev`
+                echo " "
+                echo $file $failedTxt
             fi
         fi
     done
