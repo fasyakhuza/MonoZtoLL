@@ -8,3 +8,8 @@ Then, get the plots in the form of pdf and root files by running below command:
 ```
 root -l xPlot_punzisignificance.C
 ```
+
+If you find your plots are cropped due to the maximum value of the y-axis, you can set up manually the maximum value of the y-axis by your self by change:
+
+1. the number in ```line 260``` of xPlot_punzisignificance.C for the Mphi-500_Mchi2-150_Mchi1-1 plots (brown or orange), and
+2. the number in ```line 297``` of xPlot_punzisignificance.C for the Mphi-500_Mchi2-1_Mchi1-0p1 plots (green)
