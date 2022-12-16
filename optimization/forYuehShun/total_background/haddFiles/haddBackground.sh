@@ -2,8 +2,9 @@
 inputdir="/eos/user/f/fkhuzaim/MET_Optimization/newRootFile_20221213"
 inputhaddname="haddName.txt"
 
-outputdir="/eos/user/f/fkhuzaim/MET_Optimization/merge_output"
-mkdir $outputdir
+outputdir="/eos/user/f/fkhuzaim/MET_Optimization"
+outputdirmerge="/merge_output"
+mkdir $outputdir/$outputdirmerge
 
 arrFile=()
 
