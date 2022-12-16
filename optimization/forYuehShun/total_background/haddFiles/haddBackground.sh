@@ -1,10 +1,10 @@
 #!/bin/bash
-inputdir="/eos/user/f/fkhuzaim/MET_Optimization/newRootFile_20221213"
+inputdir="/eos/user/f/fkhuzaim/MET_Optimization"
 inputhaddname="haddName.txt"
 
-outputdir="/eos/user/f/fkhuzaim/MET_Optimization"
+#outputdir="/eos/user/f/fkhuzaim/MET_Optimization"
 outputdirmerge="/merge_output"
-mkdir $outputdir/$outputdirmerge
+mkdir $inputdir$outputdirmerge
 
 arrFile=()
 
