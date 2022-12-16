@@ -133,7 +133,7 @@ First of all, make a text file that contains the list of the merged output root 
 ```
 ls pathOfYourMergedOutput/* > inputListBkg.txt
 ```
-**For example: I run "ls /eos/user/f/fkhuzaim/MET_Optimization//merge_output/** **> inputListBkg.txt" to get the text file
+(For example: I run "ls /eos/user/f/fkhuzaim/MET_Optimization//merge_output/* > inputListBkg.txt" to get the text file)
 
 Once you have the text file, you can run the macro to produce the plot using below command
 ```
