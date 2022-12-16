@@ -124,3 +124,18 @@ Run for merging
 ```
 . haddBackground.sh
 ```
+
+
+# IV. Make the plot of total number of events from all backgrounds
+In order to calculate punzi significance, we will need the total number of events from all background samples. Before summing up the number of events, it has to be normalized to integrated luminosity depending on each cross-section of the background sample.
+
+First of all, make a text file that contains the list of the merged output root files in your CERN EOS using below command. 
+```
+ls pathOfYourMergedOutput/* > inputListBkg.txt
+```
+**For example: I run "ls /eos/user/f/fkhuzaim/MET_Optimization//merge_output/* > inputListBkg.txt" to get the text file
+
+Once you have the text file, you can run the macro to produce the plot using below command
+```
+root -l xPlot_background_wDYincl.C
+```
