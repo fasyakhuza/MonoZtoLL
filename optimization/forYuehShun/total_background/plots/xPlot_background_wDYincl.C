@@ -38,7 +38,7 @@ float mean_value(const vector<float> &ttmpvector)
 }
 
 
-void xPlot_background_wDYincl(string inputtxtFilename = "inputListBkg_test.txt", string outputtxtFilename = "allBkg_wDYincl.root")
+void xPlot_background_wDYincl(string inputtxtFilename = "inputListBkg.txt", string outputtxtFilename = "allBkg_wDYincl.root")
 {
 
     Double_t lumi = 41500.0; // integrated luminosity; unit: pb^{-1}
