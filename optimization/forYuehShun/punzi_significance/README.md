@@ -13,3 +13,5 @@ If you find your plots are cropped due to the maximum value of the y-axis, you c
 
 1. the number in ```line 260``` of xPlot_punzisignificance.C for the Mphi-500_Mchi2-150_Mchi1-1 plots (brown or orange), and
 2. the number in ```line 297``` of xPlot_punzisignificance.C for the Mphi-500_Mchi2-1_Mchi1-0p1 plots (green)
+
+If you want to know the detail value of the punzi significance of each sample, you can open the output root file ```punziSig_wDYincl.root``` or make your own script to get the value you need
