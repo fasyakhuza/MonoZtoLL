@@ -2,6 +2,8 @@
 
 A set of scripts to submit jobs to HTCondor for applying preselections to background samples for Z pT optimization
 
+*Note: The preselections used in this folder do not include the AK4jets preselctions.
+
 
 ## A. Setup environment
 
