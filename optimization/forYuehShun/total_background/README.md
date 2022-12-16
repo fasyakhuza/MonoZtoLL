@@ -127,7 +127,6 @@ Run for merging
 
 
 # IV. Make the plot of total number of events from all backgrounds
-In order to calculate punzi significance, we will need the total number of events from all background samples. Before summing up the number of events, it has to be normalized to integrated luminosity depending on each cross-section of the background sample.
 
 First of all, make a text file that contains the list of the merged output root files in your CERN EOS using below command. 
 ```
