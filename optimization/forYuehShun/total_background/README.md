@@ -130,6 +130,8 @@ Run for merging
 
 First of all, make a text file that contains the list of the merged output root files in your CERN EOS using below command. 
 ```
+cd plots/
+
 ls pathOfYourMergedOutput/* > inputListBkg.txt
 ```
 (For example: I run "ls /eos/user/f/fkhuzaim/MET_Optimization//merge_output/* > inputListBkg.txt" to get the text file)
