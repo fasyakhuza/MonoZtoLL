@@ -120,8 +120,6 @@ cd haddFiles/
 
 Then, change ```line 2``` of haddBackground.sh to be the folder path you located your output in your CERN EOS.
 
-After that, change ```line 5``` of haddBackground.sh to be the folder path to place the output of the merged files.
-
 Run for merging
 ```
 . haddBackground.sh
