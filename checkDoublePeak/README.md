@@ -1,5 +1,5 @@
 ```
-git clone
+git clone https://github.com/fasyakhuza/MonoZtoLL/tree/main/checkDoublePeak
 
 mkdir outputplot
 
