@@ -1,5 +1,7 @@
+Run below code to get the dilepton pT distribution after each selection
+
 ```
-git clone https://github.com/fasyakhuza/MonoZtoLL/tree/main/checkDoublePeak
+git clone https://github.com/fasyakhuza/MonoZtoLL/tree/main/checkDoublePeak.git
 
 mkdir outputplot
 
