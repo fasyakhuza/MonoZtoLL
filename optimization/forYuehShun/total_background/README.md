@@ -50,7 +50,7 @@ Please set ```Line 5``` of run_bkg.sh to be true ```is_DY_inclusive="true"```.
 Set your proxy before submitting analysis to HTCondor
 
 ```
-voms-proxy-init --voms cms --valid 192:00 && cp -v /tmp/x509up_xxxxxxx /afs/cern.ch/user/usernameinitial/yourusername/private/x509up
+voms-proxy-init --voms cms --valid 192:00 && cp -v /tmp/x509up_xxxxxxx /afs/cern.ch/user/usernameinitial/yourusername/private/
 
 . run_bkg.sh
 ```
